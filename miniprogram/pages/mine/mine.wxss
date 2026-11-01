@@ -1,0 +1,47 @@
+.mine > view { flex-shrink: 0; }
+.mine-heading { margin: 8rpx 0 20rpx; }
+.mine-badge { color: #4f658a; background: #e6edfc; border-radius: 12rpx; padding: 6rpx 14rpx; font-size: 21rpx; }
+.mine-scroll { background: white; border-radius: 24rpx; overflow: hidden; }
+.profile-card { padding: 24rpx; border-radius: var(--radius-lg); background: var(--primary); color: white; }
+.profile-top { display: flex; align-items: center; gap: 20rpx; }
+.profile-avatar { width: 80rpx; height: 88rpx; flex-shrink: 0; border-radius: 24rpx; background: var(--yellow); color: #293b7d; font-size: 64rpx; line-height: 88rpx; font-weight: 900; text-align: center; transform: rotate(-6deg); position: relative; box-shadow: 6rpx 6rpx 0 #2542bc; }
+.avatar-spark { position: absolute; right: -12rpx; top: -28rpx; color: #cbf4e0; font-size: 34rpx; line-height: 1; }
+.profile-copy { min-width: 0; flex: 1; }
+.profile-name { font-size: 30rpx; font-weight: 800; }
+.profile-status { display: flex; align-items: center; margin-top: 8rpx; color: #e0e8ff; font-size: 21rpx; }
+.status-dot { width: 10rpx; height: 10rpx; border-radius: 50%; background: #c4ceec; margin-right: 10rpx; flex-shrink: 0; }
+.status-dot.online { background: #9dffcb; }
+button.login-button { width: 160rpx; min-height: 80rpx; flex-shrink: 0; padding: 12rpx; margin: 0; border-radius: 16rpx; display: flex; align-items: center; justify-content: center; font-size: 24rpx; font-weight: 800; background: #d6f8e5; color: #17613e; box-shadow: 0 5rpx 0 #a8d6c2; }
+.login-button[disabled] { color: #3d6855; background: #c8e7da; }
+.profile-note { margin-top: 16rpx; font-size: 21rpx; color: #e0e8ff; }
+.mine-stats { display: flex; margin: 20rpx 0 24rpx; padding: 20rpx 12rpx; background: white; border-radius: 24rpx; }
+.mine-stats > view { flex: 1; min-width: 0; text-align: center; display: flex; flex-direction: column; padding: 0 8rpx; }
+.mine-stats > view + view { border-left: 2rpx solid var(--line); }
+.mine-stat-number { font-size: 40rpx; font-weight: 900; color: var(--primary); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.mine-stat-label { font-size: 22rpx; color: var(--muted); margin-top: 6rpx; }
+.records-heading { margin-bottom: 16rpx; }.records-tip { font-size: 21rpx; }
+.mine-records { background: white; border-radius: 24rpx; overflow: hidden; padding: 0 24rpx; }
+.mine-record { display: flex; align-items: center; justify-content: space-between; min-height: 96rpx; text-align: left; }
+.mine-record + .mine-record { border-top: 2rpx solid #eef0f6; }
+.record-name { font-size: 27rpx; font-weight: 600; }
+.record-right { display: flex; align-items: center; gap: 20rpx; }.record-score { font-size: 30rpx; color: var(--primary); font-weight: 800; }.record-score text { font-size: 21rpx; font-weight: 500; }.record-chevron { font-size: 34rpx; color: #909ab3; }
+.record-press { background: #f2f5ff; }
+.mine-settings { padding: 12rpx 24rpx; background: white; border-radius: 20rpx; margin-top: 16rpx; }.setting-row { display: flex; align-items: center; justify-content: space-between; gap: 24rpx; }.setting-title { font-size: 27rpx; font-weight: 700; }
+button.logout-button { width: auto; min-height: 64rpx; padding: 12rpx 16rpx; margin: 0; font-size: 23rpx; color: var(--muted); background: transparent; }
+.mine-footer { display: flex; align-items: center; justify-content: center; min-height: 64rpx; margin-top: 8rpx; color: #929aaf; font-size: 21rpx; }
+.mine-footer.has-account { justify-content: space-between; }
+
+@media (max-height: 560px) {
+  .mine-heading { margin: 0 0 12rpx; }
+  .mine-heading .section-title { font-size: 30rpx; }
+  .profile-card { padding: 20rpx; }
+  .profile-top { gap: 16rpx; }
+  .profile-avatar { width: 72rpx; height: 80rpx; font-size: 58rpx; line-height: 80rpx; }
+  .profile-name { font-size: 28rpx; }
+  .profile-note { margin-top: 12rpx; }
+  .mine-stats { margin: 16rpx 0; padding: 12rpx; }
+  .mine-stat-number { font-size: 34rpx; }
+  .records-heading { margin-bottom: 12rpx; }
+  .records-heading .section-title { font-size: 30rpx; }
+  .mine-settings { margin-top: 12rpx; }
+}

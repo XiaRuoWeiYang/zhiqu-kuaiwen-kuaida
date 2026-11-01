@@ -1,0 +1,6397 @@
+{
+  "version": "0.8.0",
+  "status": "规则初评，尚无玩家统计校准",
+  "rule": "熟悉度基分0/25/50/75 + 推理量×8 + 混淆度×5 + 阅读量0/3/6，封顶100；按0/25/50/75分为四档",
+  "progression": "前5题容易、6～10题简单、11～15题普通、16题起困难；每档随机且本局不重复，同组诗句只取一个方向",
+  "categories": [
+    {
+      "id": "poetry",
+      "name": "诗词接句",
+      "total": 84,
+      "levels": [
+        {
+          "label": "容易",
+          "questions": 32,
+          "groups": 16
+        },
+        {
+          "label": "简单",
+          "questions": 22,
+          "groups": 11
+        },
+        {
+          "label": "普通",
+          "questions": 14,
+          "groups": 7
+        },
+        {
+          "label": "困难",
+          "questions": 16,
+          "groups": 8
+        }
+      ]
+    },
+    {
+      "id": "history",
+      "name": "历史挑战",
+      "total": 40,
+      "levels": [
+        {
+          "label": "容易",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "简单",
+          "questions": 16,
+          "groups": 16
+        },
+        {
+          "label": "普通",
+          "questions": 8,
+          "groups": 8
+        },
+        {
+          "label": "困难",
+          "questions": 6,
+          "groups": 6
+        }
+      ]
+    },
+    {
+      "id": "english",
+      "name": "单词翻译",
+      "total": 40,
+      "levels": [
+        {
+          "label": "容易",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "简单",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "普通",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "困难",
+          "questions": 10,
+          "groups": 10
+        }
+      ]
+    },
+    {
+      "id": "league",
+      "name": "联盟台词",
+      "total": 20,
+      "levels": [
+        {
+          "label": "容易",
+          "questions": 5,
+          "groups": 5
+        },
+        {
+          "label": "简单",
+          "questions": 5,
+          "groups": 5
+        },
+        {
+          "label": "普通",
+          "questions": 5,
+          "groups": 5
+        },
+        {
+          "label": "困难",
+          "questions": 5,
+          "groups": 5
+        }
+      ]
+    },
+    {
+      "id": "driving",
+      "name": "驾考挑战",
+      "total": 40,
+      "levels": [
+        {
+          "label": "容易",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "简单",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "普通",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "困难",
+          "questions": 10,
+          "groups": 10
+        }
+      ]
+    },
+    {
+      "id": "geography",
+      "name": "地理挑战",
+      "total": 40,
+      "levels": [
+        {
+          "label": "容易",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "简单",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "普通",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "困难",
+          "questions": 10,
+          "groups": 10
+        }
+      ]
+    },
+    {
+      "id": "riddles",
+      "name": "脑筋急转弯",
+      "total": 40,
+      "levels": [
+        {
+          "label": "容易",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "简单",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "普通",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "困难",
+          "questions": 10,
+          "groups": 10
+        }
+      ]
+    },
+    {
+      "id": "journey",
+      "name": "西游记快答",
+      "total": 40,
+      "levels": [
+        {
+          "label": "容易",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "简单",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "普通",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "困难",
+          "questions": 10,
+          "groups": 10
+        }
+      ]
+    },
+    {
+      "id": "anime",
+      "name": "动漫快答",
+      "total": 40,
+      "levels": [
+        {
+          "label": "容易",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "简单",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "普通",
+          "questions": 10,
+          "groups": 10
+        },
+        {
+          "label": "困难",
+          "questions": 10,
+          "groups": 10
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "id": "p0-0",
+      "category": "poetry",
+      "question": "床前明月光 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p0-1",
+      "category": "poetry",
+      "question": "疑是地上霜 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p1-0",
+      "category": "poetry",
+      "question": "举头望明月 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p1-1",
+      "category": "poetry",
+      "question": "低头思故乡 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p2-0",
+      "category": "poetry",
+      "question": "白日依山尽 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p2-1",
+      "category": "poetry",
+      "question": "黄河入海流 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p3-0",
+      "category": "poetry",
+      "question": "欲穷千里目 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p3-1",
+      "category": "poetry",
+      "question": "更上一层楼 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p4-0",
+      "category": "poetry",
+      "question": "春眠不觉晓 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p4-1",
+      "category": "poetry",
+      "question": "处处闻啼鸟 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p5-0",
+      "category": "poetry",
+      "question": "夜来风雨声 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p5-1",
+      "category": "poetry",
+      "question": "花落知多少 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p6-0",
+      "category": "poetry",
+      "question": "海内存知己 · 接出下一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p6-1",
+      "category": "poetry",
+      "question": "天涯若比邻 · 接出上一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p7-0",
+      "category": "poetry",
+      "question": "大漠孤烟直 · 接出下一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p7-1",
+      "category": "poetry",
+      "question": "长河落日圆 · 接出上一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p8-0",
+      "category": "poetry",
+      "question": "明月松间照 · 接出下一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p8-1",
+      "category": "poetry",
+      "question": "清泉石上流 · 接出上一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p9-0",
+      "category": "poetry",
+      "question": "空山不见人 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p9-1",
+      "category": "poetry",
+      "question": "但闻人语响 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p10-0",
+      "category": "poetry",
+      "question": "野火烧不尽 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p10-1",
+      "category": "poetry",
+      "question": "春风吹又生 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p11-0",
+      "category": "poetry",
+      "question": "谁知盘中餐 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p11-1",
+      "category": "poetry",
+      "question": "粒粒皆辛苦 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p12-0",
+      "category": "poetry",
+      "question": "随风潜入夜 · 接出下一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p12-1",
+      "category": "poetry",
+      "question": "润物细无声 · 接出上一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p13-0",
+      "category": "poetry",
+      "question": "会当凌绝顶 · 接出下一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p13-1",
+      "category": "poetry",
+      "question": "一览众山小 · 接出上一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p14-0",
+      "category": "poetry",
+      "question": "国破山河在 · 接出下一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p14-1",
+      "category": "poetry",
+      "question": "城春草木深 · 接出上一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p15-0",
+      "category": "poetry",
+      "question": "两个黄鹂鸣翠柳 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p15-1",
+      "category": "poetry",
+      "question": "一行白鹭上青天 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p16-0",
+      "category": "poetry",
+      "question": "飞流直下三千尺 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p16-1",
+      "category": "poetry",
+      "question": "疑是银河落九天 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p17-0",
+      "category": "poetry",
+      "question": "两岸猿声啼不住 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p17-1",
+      "category": "poetry",
+      "question": "轻舟已过万重山 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p18-0",
+      "category": "poetry",
+      "question": "桃花潭水深千尺 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p18-1",
+      "category": "poetry",
+      "question": "不及汪伦送我情 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p19-0",
+      "category": "poetry",
+      "question": "孤帆远影碧空尽 · 接出下一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p19-1",
+      "category": "poetry",
+      "question": "唯见长江天际流 · 接出上一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p20-0",
+      "category": "poetry",
+      "question": "山重水复疑无路 · 接出下一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p20-1",
+      "category": "poetry",
+      "question": "柳暗花明又一村 · 接出上一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p21-0",
+      "category": "poetry",
+      "question": "不识庐山真面目 · 接出下一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p21-1",
+      "category": "poetry",
+      "question": "只缘身在此山中 · 接出上一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p22-0",
+      "category": "poetry",
+      "question": "欲把西湖比西子 · 接出下一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p22-1",
+      "category": "poetry",
+      "question": "淡妆浓抹总相宜 · 接出上一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p23-0",
+      "category": "poetry",
+      "question": "接天莲叶无穷碧 · 接出下一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p23-1",
+      "category": "poetry",
+      "question": "映日荷花别样红 · 接出上一句",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见名篇，需要整句回忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p24-0",
+      "category": "poetry",
+      "question": "春风又绿江南岸 · 接出下一句",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的完整诗句记忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p24-1",
+      "category": "poetry",
+      "question": "明月何时照我还 · 接出上一句",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 63,
+        "familiarity": 3,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的完整诗句记忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p25-0",
+      "category": "poetry",
+      "question": "千磨万击还坚劲 · 接出下一句",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的完整诗句记忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p25-1",
+      "category": "poetry",
+      "question": "任尔东西南北风 · 接出上一句",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 63,
+        "familiarity": 3,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的完整诗句记忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p26-0",
+      "category": "poetry",
+      "question": "小荷才露尖尖角 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p26-1",
+      "category": "poetry",
+      "question": "早有蜻蜓立上头 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p27-0",
+      "category": "poetry",
+      "question": "莫愁前路无知己 · 接出下一句",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的完整诗句记忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p27-1",
+      "category": "poetry",
+      "question": "天下谁人不识君 · 接出上一句",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 63,
+        "familiarity": 3,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的完整诗句记忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p28-0",
+      "category": "poetry",
+      "question": "停车坐爱枫林晚 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p28-1",
+      "category": "poetry",
+      "question": "霜叶红于二月花 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p29-0",
+      "category": "poetry",
+      "question": "借问酒家何处有 · 接出下一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p29-1",
+      "category": "poetry",
+      "question": "牧童遥指杏花村 · 接出上一句",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 13,
+        "familiarity": 1,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "入门名篇，直接联句；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p30-0",
+      "category": "poetry",
+      "question": "客路青山外 · 接出下一句",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的完整诗句记忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p30-1",
+      "category": "poetry",
+      "question": "行舟绿水前 · 接出上一句",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 63,
+        "familiarity": 3,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的完整诗句记忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p31-0",
+      "category": "poetry",
+      "question": "潮平两岸阔 · 接出下一句",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的完整诗句记忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p31-1",
+      "category": "poetry",
+      "question": "风正一帆悬 · 接出上一句",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 63,
+        "familiarity": 3,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的完整诗句记忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p32-0",
+      "category": "poetry",
+      "question": "海日生残夜 · 接出下一句",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的完整诗句记忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p32-1",
+      "category": "poetry",
+      "question": "江春入旧年 · 接出上一句",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 63,
+        "familiarity": 3,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的完整诗句记忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p33-0",
+      "category": "poetry",
+      "question": "乡书何处达 · 接出下一句",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的完整诗句记忆；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p33-1",
+      "category": "poetry",
+      "question": "归雁洛阳边 · 接出上一句",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 63,
+        "familiarity": 3,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的完整诗句记忆；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p34-0",
+      "category": "poetry",
+      "question": "细草微风岸 · 接出下一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p34-1",
+      "category": "poetry",
+      "question": "危樯独夜舟 · 接出上一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 88,
+        "familiarity": 4,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p35-0",
+      "category": "poetry",
+      "question": "星垂平野阔 · 接出下一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p35-1",
+      "category": "poetry",
+      "question": "月涌大江流 · 接出上一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 88,
+        "familiarity": 4,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p36-0",
+      "category": "poetry",
+      "question": "名岂文章著 · 接出下一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p36-1",
+      "category": "poetry",
+      "question": "官应老病休 · 接出上一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 88,
+        "familiarity": 4,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p37-0",
+      "category": "poetry",
+      "question": "飘飘何所似 · 接出下一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p37-1",
+      "category": "poetry",
+      "question": "天地一沙鸥 · 接出上一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 88,
+        "familiarity": 4,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p38-0",
+      "category": "poetry",
+      "question": "木落雁南度 · 接出下一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p38-1",
+      "category": "poetry",
+      "question": "北风江上寒 · 接出上一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 88,
+        "familiarity": 4,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p39-0",
+      "category": "poetry",
+      "question": "我家襄水曲 · 接出下一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p39-1",
+      "category": "poetry",
+      "question": "遥隔楚云端 · 接出上一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 88,
+        "familiarity": 4,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p40-0",
+      "category": "poetry",
+      "question": "乡泪客中尽 · 接出下一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p40-1",
+      "category": "poetry",
+      "question": "归帆天际看 · 接出上一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 88,
+        "familiarity": 4,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p41-0",
+      "category": "poetry",
+      "question": "迷津欲有问 · 接出下一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由上句顺向接下句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "p41-1",
+      "category": "poetry",
+      "question": "平海夕漫漫 · 接出上一句",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 88,
+        "familiarity": 4,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非入门诗篇，要求较广的阅读积累；由下句逆向回忆上句；错误选项保持相同字数"
+      }
+    },
+    {
+      "id": "h0",
+      "category": "history",
+      "question": "中国历史上，秦始皇统一六国是在公元前哪一年？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "记忆秦统一的具体公元前年份，年份选项容易混淆"
+      }
+    },
+    {
+      "id": "h1",
+      "category": "history",
+      "question": "西汉的建立者是谁？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见开国人物，需区分刘邦与刘秀"
+      }
+    },
+    {
+      "id": "h2",
+      "category": "history",
+      "question": "被称为“文景之治”的时期，对应哪两位皇帝？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "将盛世称谓与两位皇帝对应"
+      }
+    },
+    {
+      "id": "h3",
+      "category": "history",
+      "question": "汉武帝时期，两次出使西域的人物是谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分汉唐明不同时期的对外交流人物"
+      }
+    },
+    {
+      "id": "h4",
+      "category": "history",
+      "question": "《史记》的作者是谁？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见史学作品与作者对应"
+      }
+    },
+    {
+      "id": "h5",
+      "category": "history",
+      "question": "蔡伦改进造纸术，发生在哪个朝代？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 35,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 2,
+        "reading": 0,
+        "note": "区分西汉与东汉的技术史节点"
+      }
+    },
+    {
+      "id": "h6",
+      "category": "history",
+      "question": "“三顾茅庐”中，刘备拜访的是谁？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "大众熟悉的三国典故人物"
+      }
+    },
+    {
+      "id": "h7",
+      "category": "history",
+      "question": "赤壁之战发生于哪一年？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 60,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 2,
+        "reading": 0,
+        "note": "记忆三国战争的具体年份并区分相近节点"
+      }
+    },
+    {
+      "id": "h8",
+      "category": "history",
+      "question": "结束三国分立、完成统一的是哪个政权？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 60,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 2,
+        "reading": 0,
+        "note": "区分西晋、东晋及隋的统一背景"
+      }
+    },
+    {
+      "id": "h9",
+      "category": "history",
+      "question": "以“书圣”著称的书法家是谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "书法家称号与人物对应"
+      }
+    },
+    {
+      "id": "h10",
+      "category": "history",
+      "question": "祖冲之在哪一领域取得了圆周率研究成果？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "从圆周率直接识别数学领域"
+      }
+    },
+    {
+      "id": "h11",
+      "category": "history",
+      "question": "隋朝完成全国统一时，在位的皇帝是谁？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 60,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 2,
+        "reading": 0,
+        "note": "区分隋文帝统一与隋炀帝时期史事"
+      }
+    },
+    {
+      "id": "h12",
+      "category": "history",
+      "question": "“贞观之治”对应哪位皇帝的统治时期？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 35,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 2,
+        "reading": 0,
+        "note": "区分唐代皇帝及其对应年号"
+      }
+    },
+    {
+      "id": "h13",
+      "category": "history",
+      "question": "唐朝僧人玄奘西行，主要是为了什么？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "由广为熟知的玄奘西行故事识别目的"
+      }
+    },
+    {
+      "id": "h14",
+      "category": "history",
+      "question": "唐玄宗统治前期的盛世，史称什么？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "识别唐代盛世与其他朝代年号"
+      }
+    },
+    {
+      "id": "h15",
+      "category": "history",
+      "question": "《清明上河图》的作者是谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "绘画作品与作者对应"
+      }
+    },
+    {
+      "id": "h16",
+      "category": "history",
+      "question": "北宋时期，发明活字印刷术的人是谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "识别活字印刷术与造纸术的发明者"
+      }
+    },
+    {
+      "id": "h17",
+      "category": "history",
+      "question": "《资治通鉴》的主持编纂者是谁？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 60,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 2,
+        "reading": 0,
+        "note": "区分司马光与司马迁及两部史书"
+      }
+    },
+    {
+      "id": "h18",
+      "category": "history",
+      "question": "南宋抗金名将岳飞，所属的朝代是？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "岳飞与南宋是常见历史知识"
+      }
+    },
+    {
+      "id": "h19",
+      "category": "history",
+      "question": "元朝的建立者是谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 35,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 2,
+        "reading": 0,
+        "note": "区分蒙古帝国与元朝建立者"
+      }
+    },
+    {
+      "id": "h20",
+      "category": "history",
+      "question": "明朝的建立者是谁？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "明朝开国人物，排除同姓皇帝"
+      }
+    },
+    {
+      "id": "h21",
+      "category": "history",
+      "question": "郑和下西洋，发生在哪个朝代？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "郑和下西洋所属朝代是基础常识"
+      }
+    },
+    {
+      "id": "h22",
+      "category": "history",
+      "question": "《本草纲目》的作者是谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分本草学作品与其他医学家的著作"
+      }
+    },
+    {
+      "id": "h23",
+      "category": "history",
+      "question": "《天工开物》的作者是谁？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 60,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 2,
+        "reading": 0,
+        "note": "较进阶的古代科技著作作者辨析"
+      }
+    },
+    {
+      "id": "h24",
+      "category": "history",
+      "question": "中国古代著名水利工程都江堰，位于今天哪个省？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "古代水利工程与现代省份对应"
+      }
+    },
+    {
+      "id": "h25",
+      "category": "history",
+      "question": "“卧薪尝胆”这一典故通常与哪位君主有关？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 35,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 2,
+        "reading": 0,
+        "note": "区分春秋吴越两国君主"
+      }
+    },
+    {
+      "id": "h26",
+      "category": "history",
+      "question": "儒家学派的创始人是谁？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "儒家创始人是基础文化常识"
+      }
+    },
+    {
+      "id": "h27",
+      "category": "history",
+      "question": "“商鞅变法”主要发生在哪个诸侯国？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "改革人物与诸侯国对应"
+      }
+    },
+    {
+      "id": "h28",
+      "category": "history",
+      "question": "“陈桥兵变”后，建立北宋的是谁？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 60,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 2,
+        "reading": 0,
+        "note": "辨析北宋建立过程及人物"
+      }
+    },
+    {
+      "id": "h29",
+      "category": "history",
+      "question": "虎门销烟由哪位官员主持？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "近代史入门事件与人物对应"
+      }
+    },
+    {
+      "id": "h30",
+      "category": "history",
+      "question": "辛亥革命爆发于哪一年？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辛亥革命的具体年份记忆"
+      }
+    },
+    {
+      "id": "h31",
+      "category": "history",
+      "question": "京张铁路的总工程师是谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "近代工程与科学家人物对应"
+      }
+    },
+    {
+      "id": "ha0",
+      "category": "history",
+      "question": "唐初三省分工中，负责审核诏令的是哪个机构？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 68,
+        "familiarity": 3,
+        "reasoning": 1,
+        "confusion": 2,
+        "reading": 0,
+        "note": "同时辨析三省的相近职能"
+      }
+    },
+    {
+      "id": "ha1",
+      "category": "history",
+      "question": "唐代中央行政体系中，六部主要隶属于哪个机构？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 68,
+        "familiarity": 3,
+        "reasoning": 1,
+        "confusion": 2,
+        "reading": 0,
+        "note": "区分三省名称与行政隶属关系"
+      }
+    },
+    {
+      "id": "ha2",
+      "category": "history",
+      "question": "下列古代选官制度，按主要兴起时间排列正确的是？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 79,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 2,
+        "reading": 3,
+        "note": "需要比较三个时期的制度并完整排序"
+      }
+    },
+    {
+      "id": "ha3",
+      "category": "history",
+      "question": "关于《史记》和《资治通鉴》，体例对应正确的是？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 79,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 2,
+        "reading": 3,
+        "note": "同时区分编年/纪传和通史/断代两组概念"
+      }
+    },
+    {
+      "id": "ha4",
+      "category": "history",
+      "question": "下列事件按时间先后排列，哪一项正确？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 79,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 2,
+        "reading": 3,
+        "note": "需要同时比较三国、两晋和隋三个节点"
+      }
+    },
+    {
+      "id": "ha5",
+      "category": "history",
+      "question": "下列著作按成书时代先后排列，哪一项正确？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 79,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 2,
+        "reading": 3,
+        "note": "把作品与时代匹配后还需完成排序"
+      }
+    },
+    {
+      "id": "ha6",
+      "category": "history",
+      "question": "下列事件中，发生时间最早的是？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 76,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 2,
+        "reading": 0,
+        "note": "跨秦汉、三国、隋、明比较事件先后"
+      }
+    },
+    {
+      "id": "ha7",
+      "category": "history",
+      "question": "下列历史人物与所处朝代的组合，全部正确的是？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 79,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 2,
+        "reading": 3,
+        "note": "双知识点同时判断，错误选项各只改一项"
+      }
+    },
+    {
+      "id": "en-apple",
+      "category": "english",
+      "question": "apple · 名词 · 请选择这个单词的中文意思",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "日常启蒙词汇，辨认基础词义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-book",
+      "category": "english",
+      "question": "book · 名词 · 请选择这个单词的中文意思",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "日常启蒙词汇，辨认基础词义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-water",
+      "category": "english",
+      "question": "water · 名词 · 请选择这个单词的中文意思",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "日常启蒙词汇，辨认基础词义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-cat",
+      "category": "english",
+      "question": "cat · 名词 · 请选择这个单词的中文意思",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "日常启蒙词汇，辨认基础词义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-dog",
+      "category": "english",
+      "question": "dog · 名词 · 请选择这个单词的中文意思",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "日常启蒙词汇，辨认基础词义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-sun",
+      "category": "english",
+      "question": "sun · 名词 · 请选择这个单词的中文意思",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "日常启蒙词汇，辨认基础词义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-moon",
+      "category": "english",
+      "question": "moon · 名词 · 请选择这个单词的中文意思",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "日常启蒙词汇，辨认基础词义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-red",
+      "category": "english",
+      "question": "red · 形容词 · 请选择这个单词的中文意思",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "日常启蒙词汇，辨认基础词义；限定形容词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-school",
+      "category": "english",
+      "question": "school · 名词 · 请选择这个单词的中文意思",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "日常启蒙词汇，辨认基础词义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-friend",
+      "category": "english",
+      "question": "friend · 名词 · 请选择这个单词的中文意思",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "日常启蒙词汇，辨认基础词义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-careful",
+      "category": "english",
+      "question": "careful · 形容词 · 请选择这个单词的中文意思",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见生活与学习词汇，辨认常用义；限定形容词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-forest",
+      "category": "english",
+      "question": "forest · 名词 · 请选择这个单词的中文意思",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见生活与学习词汇，辨认常用义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-bridge",
+      "category": "english",
+      "question": "bridge · 名词 · 请选择这个单词的中文意思",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见生活与学习词汇，辨认常用义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-journey",
+      "category": "english",
+      "question": "journey · 名词 · 请选择这个单词的中文意思",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见生活与学习词汇，辨认常用义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-nurse",
+      "category": "english",
+      "question": "nurse · 名词 · 请选择这个单词的中文意思",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见生活与学习词汇，辨认常用义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-quiet",
+      "category": "english",
+      "question": "quiet · 形容词 · 请选择这个单词的中文意思",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见生活与学习词汇，辨认常用义；限定形容词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-borrow",
+      "category": "english",
+      "question": "borrow · 动词 · 请选择这个单词的中文意思",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见生活与学习词汇，辨认常用义；限定动词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-forget",
+      "category": "english",
+      "question": "forget · 动词 · 请选择这个单词的中文意思",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见生活与学习词汇，辨认常用义；限定动词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-hungry",
+      "category": "english",
+      "question": "hungry · 形容词 · 请选择这个单词的中文意思",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见生活与学习词汇，辨认常用义；限定形容词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-weather",
+      "category": "english",
+      "question": "weather · 名词 · 请选择这个单词的中文意思",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见生活与学习词汇，辨认常用义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-improve",
+      "category": "english",
+      "question": "improve · 动词 · 请选择这个单词的中文意思",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "进阶词汇，需较多词义积累；限定动词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-discover",
+      "category": "english",
+      "question": "discover · 动词 · 请选择这个单词的中文意思",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "进阶词汇，需较多词义积累；限定动词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-protect",
+      "category": "english",
+      "question": "protect · 动词 · 请选择这个单词的中文意思",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "进阶词汇，需较多词义积累；限定动词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-patient",
+      "category": "english",
+      "question": "patient · 形容词 · 请选择这个单词的中文意思",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "进阶词汇，需较多词义积累；限定形容词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-ancient",
+      "category": "english",
+      "question": "ancient · 形容词 · 请选择这个单词的中文意思",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "进阶词汇，需较多词义积累；限定形容词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-confident",
+      "category": "english",
+      "question": "confident · 形容词 · 请选择这个单词的中文意思",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "进阶词汇，需较多词义积累；限定形容词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-environment",
+      "category": "english",
+      "question": "environment · 名词 · 请选择这个单词的中文意思",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "进阶词汇，需较多词义积累；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-knowledge",
+      "category": "english",
+      "question": "knowledge · 名词 · 请选择这个单词的中文意思",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "进阶词汇，需较多词义积累；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-opportunity",
+      "category": "english",
+      "question": "opportunity · 名词 · 请选择这个单词的中文意思",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "进阶词汇，需较多词义积累；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-solution",
+      "category": "english",
+      "question": "solution · 名词 · 请选择这个单词的中文意思",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "进阶词汇，需较多词义积累；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-reluctant",
+      "category": "english",
+      "question": "reluctant · 形容词 · 请选择这个单词的中文意思",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的抽象词汇，需区分细致语义；限定形容词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-ambiguous",
+      "category": "english",
+      "question": "ambiguous · 形容词 · 请选择这个单词的中文意思",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的抽象词汇，需区分细致语义；限定形容词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-meticulous",
+      "category": "english",
+      "question": "meticulous · 形容词 · 请选择这个单词的中文意思",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的抽象词汇，需区分细致语义；限定形容词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-inevitable",
+      "category": "english",
+      "question": "inevitable · 形容词 · 请选择这个单词的中文意思",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的抽象词汇，需区分细致语义；限定形容词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-scarce",
+      "category": "english",
+      "question": "scarce · 形容词 · 请选择这个单词的中文意思",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的抽象词汇，需区分细致语义；限定形容词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-subtle",
+      "category": "english",
+      "question": "subtle · 形容词 · 请选择这个单词的中文意思",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的抽象词汇，需区分细致语义；限定形容词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-consequence",
+      "category": "english",
+      "question": "consequence · 名词 · 请选择这个单词的中文意思",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的抽象词汇，需区分细致语义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-perspective",
+      "category": "english",
+      "question": "perspective · 名词 · 请选择这个单词的中文意思",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的抽象词汇，需区分细致语义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-hypothesis",
+      "category": "english",
+      "question": "hypothesis · 名词 · 请选择这个单词的中文意思",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的抽象词汇，需区分细致语义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "en-resilience",
+      "category": "english",
+      "question": "resilience · 名词 · 请选择这个单词的中文意思",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "较进阶的抽象词汇，需区分细致语义；限定名词，错误选项不包含该词其他有效义项"
+      }
+    },
+    {
+      "id": "lol-garen",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-garen",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨认传播较广的标志性台词；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-yasuo",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-yasuo",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨认传播较广的标志性台词；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-teemo",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-teemo",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨认传播较广的标志性台词；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-masteryi",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-masteryi",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨认传播较广的标志性台词；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-annie",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-annie",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 5,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨认传播较广的标志性台词；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-riven",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-riven",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨认常见英雄的经典台词；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-ahri",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-ahri",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨认常见英雄的经典台词；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-vayne",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-vayne",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨认常见英雄的经典台词；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-jhin",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-jhin",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨认常见英雄的经典台词；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-alistar",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-alistar",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨认常见英雄的经典台词；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-twistedfate",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-twistedfate",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "需要更熟悉角色语音与人物风格；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-missfortune",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-missfortune",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "需要更熟悉角色语音与人物风格；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-singed",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-singed",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "需要更熟悉角色语音与人物风格；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-zilean",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-zilean",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "需要更熟悉角色语音与人物风格；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-jax",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-jax",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "需要更熟悉角色语音与人物风格；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-soraka",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-soraka",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨认较少被引用的动作或情境台词；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-sivir",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-sivir",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨认较少被引用的动作或情境台词；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-viktor",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-viktor",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨认较少被引用的动作或情境台词；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-ziggs",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-ziggs",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨认较少被引用的动作或情境台词；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "lol-trundle",
+      "category": "league",
+      "question": "这句台词出自哪位英雄？ · lol-trundle",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 80,
+        "familiarity": 4,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨认较少被引用的动作或情境台词；干扰项均为其他英雄，台词不直接写出答案姓名"
+      }
+    },
+    {
+      "id": "d0",
+      "category": "driving",
+      "question": "驾驶机动车在我国道路上通常应靠哪侧通行？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "基础通行方向"
+      }
+    },
+    {
+      "id": "d1",
+      "category": "driving",
+      "question": "行经人行横道，发现行人正在通过，应怎样做？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "斑马线礼让常识"
+      }
+    },
+    {
+      "id": "d2",
+      "category": "driving",
+      "question": "机动车行驶时，谁应按规定使用安全带？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "安全带使用常识"
+      }
+    },
+    {
+      "id": "d3",
+      "category": "driving",
+      "question": "饮酒后，以下哪种做法正确？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "酒后禁驾常识"
+      }
+    },
+    {
+      "id": "d4",
+      "category": "driving",
+      "question": "遇到正在执行紧急任务的救护车，应怎样做？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "紧急车辆让行常识"
+      }
+    },
+    {
+      "id": "d5",
+      "category": "driving",
+      "question": "开车时接到电话，以下哪种行为被禁止？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "分心驾驶辨识"
+      }
+    },
+    {
+      "id": "d6",
+      "category": "driving",
+      "question": "驾驶前发现车辆制动装置存在安全隐患，应怎样做？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "车辆安全检查常识"
+      }
+    },
+    {
+      "id": "d7",
+      "category": "driving",
+      "question": "倒车前，驾驶人首先应做什么？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "倒车观察常识"
+      }
+    },
+    {
+      "id": "d8",
+      "category": "driving",
+      "question": "下陡坡时，下列哪种行为被禁止？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "下坡禁忌辨识"
+      }
+    },
+    {
+      "id": "d9",
+      "category": "driving",
+      "question": "道路限速标志标明最高时速，驾驶人应怎样做？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "限速标志常识"
+      }
+    },
+    {
+      "id": "d10",
+      "category": "driving",
+      "question": "黄灯亮起时，已经越过停止线的车辆应如何通行？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分是否已越过停止线"
+      }
+    },
+    {
+      "id": "d11",
+      "category": "driving",
+      "question": "路口绿灯亮着，但交警示意停车，应听从谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "辨析信号与现场指挥优先关系"
+      }
+    },
+    {
+      "id": "d12",
+      "category": "driving",
+      "question": "准备进入环形路口时，应让谁先行？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "环形路口让行规则"
+      }
+    },
+    {
+      "id": "d13",
+      "category": "driving",
+      "question": "没有方向指示灯的路口，转弯车遇放行的直行车应怎样做？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "转弯与直行路权辨析"
+      }
+    },
+    {
+      "id": "d14",
+      "category": "driving",
+      "question": "前方路口已经堵塞，即使绿灯亮了也应怎样做？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "放行信号与堵塞情境判断"
+      }
+    },
+    {
+      "id": "d15",
+      "category": "driving",
+      "question": "同方向有多条车道，变更车道时应遵守什么？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "变道通行关系判断"
+      }
+    },
+    {
+      "id": "d16",
+      "category": "driving",
+      "question": "准备向左变更车道，应提前开启什么灯？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "转向灯与操作方向对应"
+      }
+    },
+    {
+      "id": "d17",
+      "category": "driving",
+      "question": "准备靠道路右侧停车，应提前开启什么灯？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "靠边停车的灯光选择"
+      }
+    },
+    {
+      "id": "d18",
+      "category": "driving",
+      "question": "夜间近距离跟随前车，哪种灯光不得使用？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "跟车与远光灯干扰辨识"
+      }
+    },
+    {
+      "id": "d19",
+      "category": "driving",
+      "question": "行经没有信号灯和管理人员的铁路道口，应怎样做？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "铁路道口安全通行判断"
+      }
+    },
+    {
+      "id": "d20",
+      "category": "driving",
+      "question": "夜间会车，应在距对向来车多少米以外改用近光灯？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "灯光使用距离记忆"
+      }
+    },
+    {
+      "id": "d21",
+      "category": "driving",
+      "question": "连续驾驶机动车不得超过多少小时而不停车休息？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "连续驾驶时长数值辨析"
+      }
+    },
+    {
+      "id": "d22",
+      "category": "driving",
+      "question": "连续驾驶达到4小时，停车休息至少应达到多久？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "停车休息时长数值辨析"
+      }
+    },
+    {
+      "id": "d23",
+      "category": "driving",
+      "question": "普通道路上故障车难以移动，警告标志应设在车后多远？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "普通道路故障警示距离辨析"
+      }
+    },
+    {
+      "id": "d24",
+      "category": "driving",
+      "question": "高速公路发生故障，警告标志应设在来车方向多远？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "高速与普通道路示警距离区分"
+      }
+    },
+    {
+      "id": "d25",
+      "category": "driving",
+      "question": "无中心线且无限速标志、标线的城市道路，最高时速是多少？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "道路类别与限速对应"
+      }
+    },
+    {
+      "id": "d26",
+      "category": "driving",
+      "question": "无中心线且无限速标志、标线的公路，最高时速是多少？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "城市道路与公路限速区分"
+      }
+    },
+    {
+      "id": "d27",
+      "category": "driving",
+      "question": "同方向仅一条机动车道、无限速标志标线的城市道路，最高时速是？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "车道条件下的城市道路限速"
+      }
+    },
+    {
+      "id": "d28",
+      "category": "driving",
+      "question": "普通小客车在非高速道路通过急弯，最高时速不得超过多少？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "特殊路段速度上限辨析"
+      }
+    },
+    {
+      "id": "d29",
+      "category": "driving",
+      "question": "距交叉路口多少米以内的路段，不得临时停车？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "路口禁停距离记忆"
+      }
+    },
+    {
+      "id": "d30",
+      "category": "driving",
+      "question": "高速上能见度为150米，车速上限与最低跟车距离对应哪项？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 99,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 3,
+        "note": "低能见度速度与距离双条件匹配"
+      }
+    },
+    {
+      "id": "d31",
+      "category": "driving",
+      "question": "高速上能见度为80米，车速上限与最低跟车距离对应哪项？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 99,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 3,
+        "note": "辨析相邻能见度档位的成对参数"
+      }
+    },
+    {
+      "id": "d32",
+      "category": "driving",
+      "question": "高速上能见度仅30米，以下哪种做法正确？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 99,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 3,
+        "note": "极低能见度的限速与驶离决策"
+      }
+    },
+    {
+      "id": "d33",
+      "category": "driving",
+      "question": "高速正常行驶时车速为110公里/小时，与同车道前车应保持多远？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "速度门槛与跟车距离匹配"
+      }
+    },
+    {
+      "id": "d34",
+      "category": "driving",
+      "question": "无信号灯、交警、标志标线的路口，两辆直行车交叉相遇应怎样让行？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 99,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 3,
+        "note": "完整无控制条件下的让右规则"
+      }
+    },
+    {
+      "id": "d35",
+      "category": "driving",
+      "question": "无中心隔离、无中心线的窄坡，下坡车已到中途而上坡车未上坡，谁先行？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "坡路会车一般规则的例外"
+      }
+    },
+    {
+      "id": "d36",
+      "category": "driving",
+      "question": "无中心隔离、无中心线的障碍路段，有障碍车已进入而对向车未进入，谁先行？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 99,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 3,
+        "note": "障碍会车的一般规则与例外辨析"
+      }
+    },
+    {
+      "id": "d37",
+      "category": "driving",
+      "question": "无信号灯和交警的路口，相向的右转车与左转车相遇，谁让行？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "相向转弯与通常转弯让直行区分"
+      }
+    },
+    {
+      "id": "d38",
+      "category": "driving",
+      "question": "高速同方向三条车道，没有另设限速标志时，最左车道最低时速是？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "高速多车道最低速度与例外条件"
+      }
+    },
+    {
+      "id": "d39",
+      "category": "driving",
+      "question": "非使用加油设施的车辆，距加油站多少米以内不得临时停车？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "加油站30米与路口50米交叉辨析"
+      }
+    },
+    {
+      "id": "g0",
+      "category": "geography",
+      "question": "四川省的省会是哪座城市？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "大众熟悉的省会对应"
+      }
+    },
+    {
+      "id": "g1",
+      "category": "geography",
+      "question": "浙江省的省会是哪座城市？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "常见省会与省内城市辨析"
+      }
+    },
+    {
+      "id": "g2",
+      "category": "geography",
+      "question": "江苏省的省会是哪座城市？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "常见省会与省内城市辨析"
+      }
+    },
+    {
+      "id": "g3",
+      "category": "geography",
+      "question": "广东省常用的单字简称是什么？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "常用省级简称识别"
+      }
+    },
+    {
+      "id": "g4",
+      "category": "geography",
+      "question": "著名的西湖文化景观位于哪座城市？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "大众熟悉的名胜所在地"
+      }
+    },
+    {
+      "id": "g5",
+      "category": "geography",
+      "question": "我国的首都是哪座城市？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "首都城市的基础识别"
+      }
+    },
+    {
+      "id": "g6",
+      "category": "geography",
+      "question": "湖北省的省会是哪座城市？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "常见省会与邻省城市区分"
+      }
+    },
+    {
+      "id": "g7",
+      "category": "geography",
+      "question": "湖南省的省会是哪座城市？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "省会与省内知名城市辨析"
+      }
+    },
+    {
+      "id": "g8",
+      "category": "geography",
+      "question": "我国地势总体呈现什么特点？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "中国地势的总体特点"
+      }
+    },
+    {
+      "id": "g9",
+      "category": "geography",
+      "question": "海南省的省会是哪座城市？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "常见旅游城市与省会区分"
+      }
+    },
+    {
+      "id": "g10",
+      "category": "geography",
+      "question": "山东省的省会是哪座城市？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分省会与知名沿海城市"
+      }
+    },
+    {
+      "id": "g11",
+      "category": "geography",
+      "question": "福建省的省会是哪座城市？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分省会与旅游城市"
+      }
+    },
+    {
+      "id": "g12",
+      "category": "geography",
+      "question": "云南省的省会是哪座城市？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "西南省份行政中心辨析"
+      }
+    },
+    {
+      "id": "g13",
+      "category": "geography",
+      "question": "黄山风景名胜区位于哪个省？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "名山与所在省份对应"
+      }
+    },
+    {
+      "id": "g14",
+      "category": "geography",
+      "question": "九寨沟位于哪个省？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "自然名胜所在省份记忆"
+      }
+    },
+    {
+      "id": "g15",
+      "category": "geography",
+      "question": "敦煌莫高窟位于哪个省？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "西北文化名胜与省份对应"
+      }
+    },
+    {
+      "id": "g16",
+      "category": "geography",
+      "question": "省级简称“赣”对应哪个省？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "相近省名与单字简称对应"
+      }
+    },
+    {
+      "id": "g17",
+      "category": "geography",
+      "question": "省级简称“皖”对应哪个省？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "非常用单字简称识别"
+      }
+    },
+    {
+      "id": "g18",
+      "category": "geography",
+      "question": "河南省的单字简称是什么？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见省份的单字简称辨析"
+      }
+    },
+    {
+      "id": "g19",
+      "category": "geography",
+      "question": "重庆市的单字简称是什么？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "四个直辖市简称对应"
+      }
+    },
+    {
+      "id": "g20",
+      "category": "geography",
+      "question": "河北省的省会是哪座城市？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分现行省会与省内历史名城"
+      }
+    },
+    {
+      "id": "g21",
+      "category": "geography",
+      "question": "青海省的省会是哪座城市？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "西北省区行政中心相近项辨析"
+      }
+    },
+    {
+      "id": "g22",
+      "category": "geography",
+      "question": "宁夏回族自治区的首府是哪座城市？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "自治区首府与邻近行政中心对应"
+      }
+    },
+    {
+      "id": "g23",
+      "category": "geography",
+      "question": "我国地势第一级阶梯的主体是哪片高原？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "地势阶梯与具体地形对应"
+      }
+    },
+    {
+      "id": "g24",
+      "category": "geography",
+      "question": "下列哪个地形单元位于我国地势第二级阶梯？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "地形类别和阶梯归属联合辨析"
+      }
+    },
+    {
+      "id": "g25",
+      "category": "geography",
+      "question": "下列哪组山脉位于我国地势第二、三级阶梯的分界线上？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "阶梯分界线的山脉组合辨析"
+      }
+    },
+    {
+      "id": "g26",
+      "category": "geography",
+      "question": "新疆维吾尔自治区的首府是哪座城市？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "首府与区内知名城市辨析"
+      }
+    },
+    {
+      "id": "g27",
+      "category": "geography",
+      "question": "西藏自治区的首府是哪座城市？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "自治区首府与其他城市辨析"
+      }
+    },
+    {
+      "id": "g28",
+      "category": "geography",
+      "question": "下列哪片平原位于我国地势第三级阶梯？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "平原类别与阶梯归属联合辨析"
+      }
+    },
+    {
+      "id": "g29",
+      "category": "geography",
+      "question": "下列哪片盆地位于我国地势第二级阶梯？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "盆地与不同阶梯地形辨析"
+      }
+    },
+    {
+      "id": "g30",
+      "category": "geography",
+      "question": "下列哪组东北省份与省会全部对应正确？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "东北相邻省份与两个省会联合辨析"
+      }
+    },
+    {
+      "id": "g31",
+      "category": "geography",
+      "question": "下列哪组东南省份与简称全部对应正确？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "东南相邻省份与两个简称联合辨析"
+      }
+    },
+    {
+      "id": "g32",
+      "category": "geography",
+      "question": "下列哪组西南省份与省会全部对应正确？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "西南相邻省份与知名城市联合辨析"
+      }
+    },
+    {
+      "id": "g33",
+      "category": "geography",
+      "question": "按我国地势从高到低排列，哪组正确？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 99,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 3,
+        "note": "将三个地形单元匹配阶梯后排序"
+      }
+    },
+    {
+      "id": "g34",
+      "category": "geography",
+      "question": "下列哪组地形都位于我国地势第二级阶梯？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "多个地形单元的阶梯归属联合判断"
+      }
+    },
+    {
+      "id": "g35",
+      "category": "geography",
+      "question": "下列哪组省份与省会全部对应正确？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "相近省名与两个行政中心联合辨析"
+      }
+    },
+    {
+      "id": "g36",
+      "category": "geography",
+      "question": "下列哪组自治区与首府全部对应正确？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 99,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 3,
+        "note": "两个自治区首府与知名城市联合辨析"
+      }
+    },
+    {
+      "id": "g37",
+      "category": "geography",
+      "question": "下列哪组省份与简称全部对应正确？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "华北相近省名与两个简称联合辨析"
+      }
+    },
+    {
+      "id": "g38",
+      "category": "geography",
+      "question": "下列哪组地形都位于我国地势第三级阶梯？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "多个平原与其他地形的阶梯归属联合判断"
+      }
+    },
+    {
+      "id": "g39",
+      "category": "geography",
+      "question": "下列哪组自治区与简称全部对应正确？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "两个自治区简称与相近省区联合辨析"
+      }
+    },
+    {
+      "id": "r0",
+      "category": "riddles",
+      "question": "干毛巾用来擦水，怎么越擦自己越湿？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "切换观察对象，从被擦处转向毛巾"
+      }
+    },
+    {
+      "id": "r1",
+      "category": "riddles",
+      "question": "什么东西长着一排齿，却不能用它们咬东西？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "识别同一个字的不同含义"
+      }
+    },
+    {
+      "id": "r2",
+      "category": "riddles",
+      "question": "下列哪种“针”不能用来穿线缝衣服？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "从针的用途识别文字转义"
+      }
+    },
+    {
+      "id": "r3",
+      "category": "riddles",
+      "question": "什么东西有书脊，却不是动物的脊背？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "用题干中的转义词排除动物"
+      }
+    },
+    {
+      "id": "r4",
+      "category": "riddles",
+      "question": "一千克棉花和一千克铁，哪一个更重？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "忽略材料印象，注意相同质量"
+      }
+    },
+    {
+      "id": "r5",
+      "category": "riddles",
+      "question": "正常运行的纯电动玩具火车向东开，风向西吹，燃煤的烟往哪飘？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "识别问题偷偷加入的不存在前提"
+      }
+    },
+    {
+      "id": "r6",
+      "category": "riddles",
+      "question": "赛跑中你从后面超过了第二名，此刻你排第几？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "区分超过第二与成为第一"
+      }
+    },
+    {
+      "id": "r7",
+      "category": "riddles",
+      "question": "桌上有五个苹果，你拿走两个，手里有几个苹果？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "区分拿到与剩下的数量"
+      }
+    },
+    {
+      "id": "r8",
+      "category": "riddles",
+      "question": "一个光头的人没戴帽子，在雨中淋雨，为什么头发没湿？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "区分头发与头皮，并利用明确条件"
+      }
+    },
+    {
+      "id": "r9",
+      "category": "riddles",
+      "question": "下列哪一种“笔”不能拿来写字？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "识别笔画与书写工具的区别"
+      }
+    },
+    {
+      "id": "r10",
+      "category": "riddles",
+      "question": "把“木”完整放进“口”里面，会组成哪个字？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "同时观察部件与内外位置"
+      }
+    },
+    {
+      "id": "r11",
+      "category": "riddles",
+      "question": "一个单人旁，右边放一个“木”，组成哪个字？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分相近字形中的细小差异"
+      }
+    },
+    {
+      "id": "r12",
+      "category": "riddles",
+      "question": "“门”里面放一个“口”，组成哪个字？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "比较外框相同的不同汉字"
+      }
+    },
+    {
+      "id": "r13",
+      "category": "riddles",
+      "question": "一根直木棍要锯成三段，每次只锯一处、不叠放，最少锯几次？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分段数和新增切口数"
+      }
+    },
+    {
+      "id": "r14",
+      "category": "riddles",
+      "question": "正方形纸沿一直线剪掉一个小角，不碰另外三个角，剩下的纸有几个角？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "同时计算消失的角与新增的角"
+      }
+    },
+    {
+      "id": "r15",
+      "category": "riddles",
+      "question": "两位爸爸和两位儿子一起出门，却一共只有三个人，怎么回事？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "理解身份重叠而不是直接相加"
+      }
+    },
+    {
+      "id": "r16",
+      "category": "riddles",
+      "question": "三只猫同时抓鼠，每只三分钟抓一只；九只同样的猫各抓一只，共需多久？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "识别并行工作而不是依次相加"
+      }
+    },
+    {
+      "id": "r17",
+      "category": "riddles",
+      "question": "家里有四个兄弟，他们共有同一个妹妹，一共几个孩子？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "识别同一对象被多次提及"
+      }
+    },
+    {
+      "id": "r18",
+      "category": "riddles",
+      "question": "十支蜡烛点燃后吹灭三支，之后不再点燃；其余烧尽，最后剩几支未烧尽的蜡烛？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "从最终状态反推留下的对象"
+      }
+    },
+    {
+      "id": "r19",
+      "category": "riddles",
+      "question": "把纸上常见写法的数字“6”旋转半圈，通常会看成哪个数字？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 38,
+        "familiarity": 2,
+        "reasoning": 1,
+        "confusion": 1,
+        "reading": 0,
+        "note": "从常规阅读切换到旋转观察"
+      }
+    },
+    {
+      "id": "r20",
+      "category": "riddles",
+      "question": "小羊脖子系着五米长的绳子，却走到了七米外，最直接的解释是哪项？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 66,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 0,
+        "reading": 0,
+        "note": "检查题干未给出的绳子固定条件"
+      }
+    },
+    {
+      "id": "r21",
+      "category": "riddles",
+      "question": "抽屉里只有红、蓝两色袜子，不看颜色至少拿几只，才能保证有两只同色？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 66,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 0,
+        "reading": 0,
+        "note": "按最坏情况推理保证数量"
+      }
+    },
+    {
+      "id": "r22",
+      "category": "riddles",
+      "question": "电梯每上一层用五秒，不计开关门；从一楼到六楼需要多久？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 66,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 0,
+        "reading": 0,
+        "note": "区分楼层编号与经过的间隔数"
+      }
+    },
+    {
+      "id": "r23",
+      "category": "riddles",
+      "question": "某地每天六点日出、十八点日落，从午夜起再过七十二小时，会在白天吗？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 66,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 0,
+        "reading": 0,
+        "note": "先换算完整天数再判断时刻"
+      }
+    },
+    {
+      "id": "r24",
+      "category": "riddles",
+      "question": "“昨天的明天”是星期三，那么今天是星期几？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 66,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 0,
+        "reading": 0,
+        "note": "抵消相反的相对时间描述"
+      }
+    },
+    {
+      "id": "r25",
+      "category": "riddles",
+      "question": "六杯按满满满空空空排列，只拿起一杯倒水再放回原位，怎样变成交替满空？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 69,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 0,
+        "reading": 3,
+        "note": "区分移动杯子与改变杯中水量"
+      }
+    },
+    {
+      "id": "r26",
+      "category": "riddles",
+      "question": "一根绳子单端点燃要一小时，但燃烧速度不均匀；怎样准确计半小时？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 69,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 0,
+        "reading": 3,
+        "note": "放弃按长度计时，改用两端同时燃烧"
+      }
+    },
+    {
+      "id": "r27",
+      "category": "riddles",
+      "question": "手表每天固定慢一分钟，周一中午校准，到周四中午会慢多少？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 66,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 0,
+        "reading": 0,
+        "note": "区分日期个数与实际经过天数"
+      }
+    },
+    {
+      "id": "r28",
+      "category": "riddles",
+      "question": "四只猫分别蹲在房间四角，每只都能看见其余三只，房间里共几只猫？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 66,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 0,
+        "reading": 0,
+        "note": "识别重复计数中的同一批对象"
+      }
+    },
+    {
+      "id": "r29",
+      "category": "riddles",
+      "question": "三盒分别装纯苹果、纯橘子、两种混装，标签全错；只抽一颗辨认全部，应从哪盒抽？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 69,
+        "familiarity": 3,
+        "reasoning": 2,
+        "confusion": 0,
+        "reading": 3,
+        "note": "利用所有标签错误排除混装可能"
+      }
+    },
+    {
+      "id": "r30",
+      "category": "riddles",
+      "question": "两根绳子各单端烧一小时且速度不均，A两端、B一端同时点燃；A尽时再点B另一端，共多久？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "把两端燃烧与剩余燃烧量分两步组合"
+      }
+    },
+    {
+      "id": "r31",
+      "category": "riddles",
+      "question": "七分钟和十一分钟的沙漏同时开始，七分钟漏完起计，十一分钟漏完停止，共计多久？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分整个等待时间与实际计时间隔"
+      }
+    },
+    {
+      "id": "r32",
+      "category": "riddles",
+      "question": "三人共付30元，退5元时每人拿回1元、另2元被扣；实付27元再加扣下2元，错在哪？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 99,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 3,
+        "note": "识别把已经包含的金额重复相加"
+      }
+    },
+    {
+      "id": "r33",
+      "category": "riddles",
+      "question": "甲说“乙在说谎”，乙说“我和甲都在说谎”，按两句话判断谁说真话？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "用反证处理包含自身的真假陈述"
+      }
+    },
+    {
+      "id": "r34",
+      "category": "riddles",
+      "question": "奖品只在A、B、C一盒。A签“不在A”，B签“在A”，C签“不在B”；恰一签真，奖品在哪？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "逐个假设奖品位置并统计真标签"
+      }
+    },
+    {
+      "id": "r35",
+      "category": "riddles",
+      "question": "八球仅一球偏重，用无砝码天平最多称两次找出，第一次应如何分组？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 99,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 3,
+        "note": "设计每种称重结果都能在下一次解决的分组"
+      }
+    },
+    {
+      "id": "r36",
+      "category": "riddles",
+      "question": "五个人聚会，每两个人恰好握一次手，共握多少次？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "识别一对对象从两端计数造成的重复"
+      }
+    },
+    {
+      "id": "r37",
+      "category": "riddles",
+      "question": "环形跑道同点同向同时跑，快者每秒3米、慢者每秒2米；快者首次追上一圈时跑了几圈？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "将相对速度与实际路程结合"
+      }
+    },
+    {
+      "id": "r38",
+      "category": "riddles",
+      "question": "四人从桥同侧出发，各需1、2、5、10分钟；一次最多两人，按慢者计，唯一的灯须随人往返，全过桥最少多久？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 99,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 3,
+        "note": "比较由最快两人运灯与逐人护送的不同方案"
+      }
+    },
+    {
+      "id": "r39",
+      "category": "riddles",
+      "question": "十扇门初始全关，第k轮切换编号为k倍数的门，k从1到10；最后几扇开着？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "用因数成对规律判断反复切换的最终状态"
+      }
+    },
+    {
+      "id": "j0",
+      "category": "journey",
+      "question": "《西游记》中，孙悟空最常用的兵器是什么？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "经典主角与标志性兵器对应"
+      }
+    },
+    {
+      "id": "j1",
+      "category": "journey",
+      "question": "《西游记》中，唐僧西行的主要目的是什么？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "作品主线目标识别"
+      }
+    },
+    {
+      "id": "j2",
+      "category": "journey",
+      "question": "《西游记》中，猪八戒的嘴脸像哪种动物？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "主要人物的典型外形识别"
+      }
+    },
+    {
+      "id": "j3",
+      "category": "journey",
+      "question": "《西游记》中，沙僧加入取经队伍前住在哪条河？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "经典收徒地点回忆"
+      }
+    },
+    {
+      "id": "j4",
+      "category": "journey",
+      "question": "《西游记》中，悟空从八卦炉出来后，双眼被称为什么？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "主角标志性眼睛称呼识别"
+      }
+    },
+    {
+      "id": "j5",
+      "category": "journey",
+      "question": "《西游记》中，白龙马在取经路上主要担任什么角色？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "主要成员在取经路上的职责"
+      }
+    },
+    {
+      "id": "j6",
+      "category": "journey",
+      "question": "《西游记》中，孙悟空自立的响亮称号是什么？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "广为人知的人物称号"
+      }
+    },
+    {
+      "id": "j7",
+      "category": "journey",
+      "question": "《西游记》中，孙悟空最初从什么里面诞生？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "故事开篇的石猴身世"
+      }
+    },
+    {
+      "id": "j8",
+      "category": "journey",
+      "question": "《西游记》中，如来把孙悟空压在哪座山下？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "经典受困地点识别"
+      }
+    },
+    {
+      "id": "j9",
+      "category": "journey",
+      "question": "《西游记》中，悟空一个跟头就能远行的本领叫什么？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "主角常用腾云本领名称"
+      }
+    },
+    {
+      "id": "j10",
+      "category": "journey",
+      "question": "《西游记》中，最初教孙悟空变化和筋斗云的师父是谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分不同阶段的人物与师承"
+      }
+    },
+    {
+      "id": "j11",
+      "category": "journey",
+      "question": "《西游记》中，水帘洞位于哪座山？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "洞府与所在山峰对应"
+      }
+    },
+    {
+      "id": "j12",
+      "category": "journey",
+      "question": "《西游记》中，悟空得到金箍棒的龙宫属于哪位龙王？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分四海龙宫的相关情节"
+      }
+    },
+    {
+      "id": "j13",
+      "category": "journey",
+      "question": "《西游记》中，猪八戒的常用兵器叫什么？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "常见兵器在取经成员间辨析"
+      }
+    },
+    {
+      "id": "j14",
+      "category": "journey",
+      "question": "按《西游记》原著，沙僧使用的兵器叫什么？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分原著名称与改编外形称呼"
+      }
+    },
+    {
+      "id": "j15",
+      "category": "journey",
+      "question": "《西游记》中，把嵌有紧箍的花帽交给唐僧的是谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "法器交付情节中的人物辨析"
+      }
+    },
+    {
+      "id": "j16",
+      "category": "journey",
+      "question": "《西游记》中，孙悟空脱离五行山后拜谁为取经师父？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分学艺师父与取经师父"
+      }
+    },
+    {
+      "id": "j17",
+      "category": "journey",
+      "question": "《西游记》中，被孙悟空三次识破变化的尸魔通常叫作什么？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "经典三打情节与妖怪对应"
+      }
+    },
+    {
+      "id": "j18",
+      "category": "journey",
+      "question": "《西游记》中，种有人参果树的道观叫什么？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "特殊果树与所在道观对应"
+      }
+    },
+    {
+      "id": "j19",
+      "category": "journey",
+      "question": "《西游记》中，悟空向铁扇公主借什么来灭火？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "法宝与对应关卡辨析"
+      }
+    },
+    {
+      "id": "j20",
+      "category": "journey",
+      "question": "《西游记》中，龙宫中的金箍棒原先被称作什么？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "兵器在取得之前的原名回忆"
+      }
+    },
+    {
+      "id": "j21",
+      "category": "journey",
+      "question": "《西游记》中，猪八戒被贬下凡前担任什么职务？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "取经人物前身与天界职务对应"
+      }
+    },
+    {
+      "id": "j22",
+      "category": "journey",
+      "question": "《西游记》中，沙僧被贬下凡前担任什么职务？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "相近天界职务与人物前身区分"
+      }
+    },
+    {
+      "id": "j23",
+      "category": "journey",
+      "question": "《西游记》中，红孩儿擅长喷出的火叫什么？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "妖怪本领的准确名称回忆"
+      }
+    },
+    {
+      "id": "j24",
+      "category": "journey",
+      "question": "《西游记》中，收服红孩儿并带他修行的是谁？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "相近菩萨与降妖情节辨析"
+      }
+    },
+    {
+      "id": "j25",
+      "category": "journey",
+      "question": "《西游记》中，真假美猴王里的假悟空是什么来历？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "相近猴类名称中的真伪辨析"
+      }
+    },
+    {
+      "id": "j26",
+      "category": "journey",
+      "question": "《西游记》中，悟空第一次上天做官，得到什么官职？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分初次天职与后来的称号"
+      }
+    },
+    {
+      "id": "j27",
+      "category": "journey",
+      "question": "《西游记》中，悟空大闹天宫时偷吃的仙丹是谁炼的？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "天宫地点与炼丹者对应"
+      }
+    },
+    {
+      "id": "j28",
+      "category": "journey",
+      "question": "《西游记》中，金角、银角大王原是哪位神仙身边的童子？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "妖怪原身与所属神仙辨析"
+      }
+    },
+    {
+      "id": "j29",
+      "category": "journey",
+      "question": "《西游记》中，五庄观的主人是谁？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "道观主人与其他高人区分"
+      }
+    },
+    {
+      "id": "j30",
+      "category": "journey",
+      "question": "《西游记》中，菩提祖师的修行洞府叫什么？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "学艺洞府的具体名称回忆"
+      }
+    },
+    {
+      "id": "j31",
+      "category": "journey",
+      "question": "按《西游记》原著，金箍棒上写的重量是多少？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "原著兵器铭文中的准确数量"
+      }
+    },
+    {
+      "id": "j32",
+      "category": "journey",
+      "question": "《西游记》中，牛魔王曾变成谁，骗悟空交出芭蕉扇？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "多次借扇情节中的具体变化身份"
+      }
+    },
+    {
+      "id": "j33",
+      "category": "journey",
+      "question": "按《西游记》原著，白骨精三次变化的先后顺序是哪组？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "连续三次变化的完整次序辨析"
+      }
+    },
+    {
+      "id": "j34",
+      "category": "journey",
+      "question": "《西游记》结尾，孙悟空受封为什么？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "结尾封号与取经成员对应"
+      }
+    },
+    {
+      "id": "j35",
+      "category": "journey",
+      "question": "《西游记》结尾，猪八戒受封为什么？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "相近结尾封号中的人物辨析"
+      }
+    },
+    {
+      "id": "j36",
+      "category": "journey",
+      "question": "《西游记》结尾，沙僧受封为什么？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "取经配角的最终封号回忆"
+      }
+    },
+    {
+      "id": "j37",
+      "category": "journey",
+      "question": "按《西游记》原著结尾的封授文字，白龙马受封为什么？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "注意原著完整封授名称"
+      }
+    },
+    {
+      "id": "j38",
+      "category": "journey",
+      "question": "《西游记》结尾，唐僧受封为什么？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "师徒不同佛号与封号的联合区分"
+      }
+    },
+    {
+      "id": "j39",
+      "category": "journey",
+      "question": "《西游记》中，沙僧在天宫失手打碎了什么而获罪？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "人物被贬缘由中的具体物件"
+      }
+    },
+    {
+      "id": "a0",
+      "category": "anime",
+      "question": "《哆啦A梦》中，哆啦A梦是哪种机器人？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "大众熟悉的主角基本身份"
+      }
+    },
+    {
+      "id": "a1",
+      "category": "anime",
+      "question": "《哆啦A梦》中，经常得到哆啦A梦帮助的男孩是谁？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "核心搭档人物识别"
+      }
+    },
+    {
+      "id": "a2",
+      "category": "anime",
+      "question": "《火影忍者》中，鸣人从小立志成为木叶的什么人？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "作品主角的经典梦想"
+      }
+    },
+    {
+      "id": "a3",
+      "category": "anime",
+      "question": "《海贼王》中，草帽一伙的船长是谁？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "核心队伍的主角身份"
+      }
+    },
+    {
+      "id": "a4",
+      "category": "anime",
+      "question": "《海贼王》中，以“三刀流”闻名的草帽剑士是谁？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "标志性战斗方式与人物对应"
+      }
+    },
+    {
+      "id": "a5",
+      "category": "anime",
+      "question": "《名侦探柯南》中，江户川柯南原本是谁？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "作品核心人物身份"
+      }
+    },
+    {
+      "id": "a6",
+      "category": "anime",
+      "question": "《宝可梦》动画中，小智最经典的黄色搭档是谁？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "标志性主角搭档辨认"
+      }
+    },
+    {
+      "id": "a7",
+      "category": "anime",
+      "question": "《灌篮高手》中，樱木花道加入了哪所高中的篮球队？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "主角与所属学校对应"
+      }
+    },
+    {
+      "id": "a8",
+      "category": "anime",
+      "question": "《灌篮高手》中，湘北队队长是谁？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "核心队长身份回忆"
+      }
+    },
+    {
+      "id": "a9",
+      "category": "anime",
+      "question": "《鬼灭之刃》中，祢豆子与炭治郎是什么关系？",
+      "level": "容易",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 0,
+        "familiarity": 1,
+        "reasoning": 0,
+        "confusion": 0,
+        "reading": 0,
+        "note": "主要人物的家庭关系"
+      }
+    },
+    {
+      "id": "a10",
+      "category": "anime",
+      "question": "《哆啦A梦》中，哆啦A梦特别喜欢吃哪种点心？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "角色偏好与相近日式点心辨析"
+      }
+    },
+    {
+      "id": "a11",
+      "category": "anime",
+      "question": "《哆啦A梦》中，哆啦A梦特别害怕哪种小动物？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "经典角色弱点识别"
+      }
+    },
+    {
+      "id": "a12",
+      "category": "anime",
+      "question": "《火影忍者》中，有“拷贝忍者”之称的是谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "人物外号与能力对应"
+      }
+    },
+    {
+      "id": "a13",
+      "category": "anime",
+      "question": "《火影忍者》故事初期，鸣人体内封印的是哪只尾兽？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "限定故事阶段后的尾兽辨析"
+      }
+    },
+    {
+      "id": "a14",
+      "category": "anime",
+      "question": "《海贼王》中，草帽一伙的航海士是谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "女性角色与船上职务对应"
+      }
+    },
+    {
+      "id": "a15",
+      "category": "anime",
+      "question": "《海贼王》中，草帽一伙的船医是谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "成员与专长职务对应"
+      }
+    },
+    {
+      "id": "a16",
+      "category": "anime",
+      "question": "《名侦探柯南》中，毛利兰的父亲是谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "相近长辈人物的亲属关系"
+      }
+    },
+    {
+      "id": "a17",
+      "category": "anime",
+      "question": "《宝可梦》动画中，小智来自哪个城镇？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "主角出发地与常见城市辨析"
+      }
+    },
+    {
+      "id": "a18",
+      "category": "anime",
+      "question": "《灌篮高手》中，湘北队以三分球见长的球员是谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "主要球员的代表性技术"
+      }
+    },
+    {
+      "id": "a19",
+      "category": "anime",
+      "question": "《鬼灭之刃》中，经常戴着野猪头套的是谁？",
+      "level": "简单",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 30,
+        "familiarity": 2,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "相近剑士角色的外形辨析"
+      }
+    },
+    {
+      "id": "a20",
+      "category": "anime",
+      "question": "《哆啦A梦》中，哆啦A梦来自哪个世纪？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "时间背景的具体数字回忆"
+      }
+    },
+    {
+      "id": "a21",
+      "category": "anime",
+      "question": "《火影忍者》中，宇智波佐助所属家族的代表性瞳术是什么？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "相近瞳术与家族对应"
+      }
+    },
+    {
+      "id": "a22",
+      "category": "anime",
+      "question": "《海贼王》中，乌索普进行远程狙击常用什么武器？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分狙击手身份与具体武器"
+      }
+    },
+    {
+      "id": "a23",
+      "category": "anime",
+      "question": "《名侦探柯南》中，毛利兰擅长哪项武术？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "角色专长与相近武术门类区分"
+      }
+    },
+    {
+      "id": "a24",
+      "category": "anime",
+      "question": "《名侦探柯南》中，身体缩小后的灰原哀主要寄住在谁家？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分两位缩小角色的居住安排"
+      }
+    },
+    {
+      "id": "a25",
+      "category": "anime",
+      "question": "《宝可梦》中，皮卡丘的属性是什么？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "形象之外的属性设定辨识"
+      }
+    },
+    {
+      "id": "a26",
+      "category": "anime",
+      "question": "《宝可梦》动画中，小霞最喜欢哪类宝可梦？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "训练家与擅长类型对应"
+      }
+    },
+    {
+      "id": "a27",
+      "category": "anime",
+      "question": "《灌篮高手》中，宫城良田在湘北队主要打哪个位置？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "球员与场上位置的准确对应"
+      }
+    },
+    {
+      "id": "a28",
+      "category": "anime",
+      "question": "《鬼灭之刃》中，炭治郎特别敏锐的是哪种感官？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "同伴不同感官特长的辨析"
+      }
+    },
+    {
+      "id": "a29",
+      "category": "anime",
+      "question": "《鬼灭之刃》中，善逸特别敏锐的是哪种感官？",
+      "level": "普通",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 55,
+        "familiarity": 3,
+        "reasoning": 0,
+        "confusion": 1,
+        "reading": 0,
+        "note": "对比多名剑士的不同感官设定"
+      }
+    },
+    {
+      "id": "a30",
+      "category": "anime",
+      "question": "《哆啦A梦》中，派哆啦A梦来帮助大雄的世修，是大雄的什么后代？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "跨多代亲属关系的准确回忆"
+      }
+    },
+    {
+      "id": "a31",
+      "category": "anime",
+      "question": "《火影忍者》中，小樱主要跟随哪位师父学习医疗忍术与怪力？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分老师、前辈与同门的师承"
+      }
+    },
+    {
+      "id": "a32",
+      "category": "anime",
+      "question": "《火影忍者》中，迪达拉使用的代表性战斗材料是什么？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "组织成员与具体能力材料对应"
+      }
+    },
+    {
+      "id": "a33",
+      "category": "anime",
+      "question": "《海贼王》中，山治一直想寻找的传说海域叫什么？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "区分船员梦想与其他旅程目的地"
+      }
+    },
+    {
+      "id": "a34",
+      "category": "anime",
+      "question": "《名侦探柯南》中，灰原哀原本的姓名是什么？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "相近家族人物姓名与化名对应"
+      }
+    },
+    {
+      "id": "a35",
+      "category": "anime",
+      "question": "《名侦探柯南》中，毛利兰的母亲妃英理从事什么职业？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "次要人物的亲属身份与职业结合"
+      }
+    },
+    {
+      "id": "a36",
+      "category": "anime",
+      "question": "《宝可梦》动画中，小茂的爷爷是哪位研究者？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "多位博士与具体家庭关系辨析"
+      }
+    },
+    {
+      "id": "a37",
+      "category": "anime",
+      "question": "《灌篮高手》中，与赤木一起支撑球队的湘北副队长是谁？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "次要球员与队内职务对应"
+      }
+    },
+    {
+      "id": "a38",
+      "category": "anime",
+      "question": "《鬼灭之刃》中，富冈义勇是哪一位“柱”？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "柱的称号与相近剑士对应"
+      }
+    },
+    {
+      "id": "a39",
+      "category": "anime",
+      "question": "《鬼灭之刃》中，胡蝶忍是哪一位“柱”？",
+      "level": "困难",
+      "assessment": {
+        "version": 1,
+        "status": "initial",
+        "score": 96,
+        "familiarity": 4,
+        "reasoning": 2,
+        "confusion": 1,
+        "reading": 0,
+        "note": "多位柱之间的具体称号辨析"
+      }
+    }
+  ]
+}

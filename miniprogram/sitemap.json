@@ -1,0 +1,1 @@
+{ "desc": "本地答题小程序", "rules": [{ "action": "allow", "page": "*" }] }

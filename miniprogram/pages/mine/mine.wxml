@@ -1,0 +1,20 @@
+<view class="page screen mine enter">
+  <view class="between mine-heading"><text class="section-title">我的答题小站</text><text class="mine-badge">每天进步一点</text></view>
+  <view class="profile-card">
+    <view class="profile-top">
+      <view class="profile-avatar" aria-hidden="true">?<view class="avatar-spark">✦</view></view>
+      <view class="profile-copy"><view class="profile-name">{{loggedIn ? '微信答题玩家' : '你好，答题玩家'}}</view><view class="profile-status"><view class="status-dot {{loggedIn ? 'online' : ''}}"></view>{{loggedIn ? '微信已登录' : '不登录也能答题'}}</view></view>
+      <button wx:if="{{!loggedIn}}" size="mini" class="login-button" bindtap="login" disabled="{{loggingIn}}" loading="{{loggingIn}}" hover-class="press">{{loggingIn ? '连接中' : '微信登录'}}</button>
+    </view>
+    <view class="profile-note">{{loggedIn ? '成绩保存在本机，继续挑战积累新纪录' : '登录用于识别微信账号，成绩保存在本机'}}</view>
+  </view>
+  <view class="mine-stats"><view><text class="mine-stat-number">{{rounds}}</text><text class="mine-stat-label">累计挑战</text></view><view><text class="mine-stat-number">{{totalCorrect}}</text><text class="mine-stat-label">累计答对</text></view><view><text class="mine-stat-number">{{best}}</text><text class="mine-stat-label">最高分</text></view></view>
+  <view class="between records-heading"><text class="section-title">我的最高分</text><text class="muted records-tip">点一项，再挑战</text></view>
+  <scroll-view class="content-scroll mine-scroll" scroll-y enhanced bounces="{{false}}" show-scrollbar="{{true}}" aria-label="各题库最高分列表">
+    <view class="mine-records">
+      <button wx:for="{{categories}}" wx:key="id" class="mine-record" data-category="{{item.id}}" bindtap="start" hover-class="record-press" aria-label="{{item.name}}最高{{item.best}}分，开始挑战"><text class="record-name">{{item.name}}</text><view class="record-right"><text class="record-score">{{item.best}}<text> 分</text></text><text class="record-chevron">›</text></view></button>
+    </view>
+  </scroll-view>
+  <view class="mine-settings"><view class="setting-row"><text class="setting-title">倒计时音效</text><switch checked="{{soundEnabled}}" bindchange="toggleSound" color="#3659ed" aria-label="倒计时音效" /></view></view>
+  <view class="mine-footer {{loggedIn ? 'has-account' : ''}}"><text>知趣快问快答 · v0.9.2</text><button wx:if="{{loggedIn}}" size="mini" class="logout-button" bindtap="logout" hover-class="press">退出登录</button></view>
+</view>

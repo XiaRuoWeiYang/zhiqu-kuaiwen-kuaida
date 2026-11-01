@@ -1,0 +1,115 @@
+.greeting { margin-bottom: 24rpx; }
+.tiny-badge { display: flex; align-items: center; font-size: 22rpx; color: #52637c; }
+.online-dot { width: 12rpx; height: 12rpx; border-radius: 50%; background: #30a875; margin-right: 10rpx; }
+.hero { background: var(--primary); border-radius: var(--radius-lg); color: white; padding: 36rpx 32rpx; min-height: 328rpx; display: flex; align-items: center; overflow: hidden; }
+.hero-copy { flex: 1; z-index: 1; }
+.hero-label { display: inline-block; padding: 6rpx 16rpx; border-radius: 10rpx; background: #5272fa; color: #eef2ff; font-size: 22rpx; }
+.hero-title { font-size: 52rpx; font-weight: 900; letter-spacing: 2rpx; line-height: 1.3; margin: 20rpx 0 16rpx; }
+.hero-caption { font-size: 23rpx; color: #e6ecff; white-space: nowrap; }
+.mascot { width: 190rpx; height: 230rpx; position: relative; margin-left: -18rpx; flex-shrink: 0; }
+.mascot-card { background: var(--yellow); width: 150rpx; height: 184rpx; border-radius: 24rpx; border: 5rpx solid #202640; transform: rotate(12deg); margin: 20rpx auto 0; box-shadow: 9rpx 8rpx 0 #243dba; display: flex; align-items: center; flex-direction: column; }
+.mascot-q { color: #242e55; font-size: 112rpx; font-weight: 900; line-height: 1.08; }
+.mascot-face { display: flex; align-items: center; margin-top: 12rpx; }
+.eye { background: #242e55; width: 10rpx; height: 14rpx; border-radius: 50%; }
+.smile { width: 30rpx; height: 16rpx; border-bottom: 5rpx solid #242e55; border-radius: 50%; margin: 0 14rpx; }
+.mascot-shadow { background: #2d4bca; width: 122rpx; height: 16rpx; border-radius: 50%; margin: 24rpx auto 0; }
+.spark { position: absolute; color: #d9fce8; font-size: 40rpx; }
+.spark-one { top: -18rpx; right: 0; }.spark-two { bottom: 4rpx; left: -12rpx; font-size: 28rpx; }
+.record-strip { display: flex; align-items: center; background: white; margin: 24rpx 0 40rpx; padding: 24rpx; border-radius: 24rpx; }
+.record { flex: 1; display: flex; flex-direction: column; }.record-number { font-size: 42rpx; line-height: 1.2; font-weight: 800; font-variant-numeric: tabular-nums; }.unit { font-size: 22rpx; font-weight: 500; }.record-label { font-size: 22rpx; color: var(--muted); margin-top: 8rpx; }
+.record-divider { width: 2rpx; height: 58rpx; background: var(--line); margin-right: 28rpx; }.record-note { font-size: 22rpx; line-height: 1.7; color: #5c6580; border-left: 2rpx solid var(--line); padding-left: 24rpx; }.record-note .heavy { color: var(--primary); }
+.small { font-size: 22rpx; }.category-heading { margin-bottom: 24rpx; }.category { text-align: left; width: 100%; display: flex; align-items: center; min-height: 224rpx; border-radius: 28rpx; padding: 28rpx 24rpx; margin-bottom: 24rpx; border: 2rpx solid rgba(32,38,64,.06); transition: transform var(--fast); }
+.poetry { background: #cef2df; box-shadow: 0 6rpx 0 #afd9c4; }.history { background: #ffe6a4; box-shadow: 0 6rpx 0 #edcf85; }
+.english { background: #dbe9ff; box-shadow: 0 6rpx 0 #bbd1f2; }
+.category-art { width: 112rpx; margin-right: 24rpx; position: relative; flex-shrink: 0; }.art-paper { width: 84rpx; height: 112rpx; border: 3rpx solid #287453; border-radius: 12rpx; background: #f5fff9; transform: rotate(-9deg); box-shadow: 6rpx 6rpx 0 #9dd8b9; padding: 8rpx 12rpx; }.art-paper text { font-size: 44rpx; font-weight: 800; color: #287453; }.paper-line { height: 4rpx; background: #91cdb1; margin-top: 6rpx; border-radius: 4rpx; }.paper-line.short { width: 65%; }.art-spark { position: absolute; top: -16rpx; right: 0; font-size: 36rpx; color: #438a67; }
+.history .art-paper { border-color: #a66628; transform: rotate(8deg); box-shadow: 6rpx 6rpx 0 #e5bd6a; background: #fffaf0; }.history .art-paper text,.history .art-spark { color: #a66628; }.history .paper-line { background: #dbb776; }
+.english .art-paper { border-color: #3a66a7; transform: rotate(-5deg); box-shadow: 6rpx 6rpx 0 #adc8ed; background: #f6faff; }
+.english .art-paper text, .english .art-spark { color: #3a66a7; }
+.english .paper-line { background: #9bb9e3; }
+.english .category-subtitle, .english .category-meta { color: #486386; }
+.category-copy { flex: 1; min-width: 0; }.category-title { font-size: 38rpx; font-weight: 800; }.category-subtitle { font-size: 22rpx; color: #465c50; margin-top: 8rpx; }.history .category-subtitle { color: #7f6335; }.category-meta { font-size: 21rpx; color: #50695a; margin-top: 18rpx; }.history .category-meta { color: #7f6335; }.meta-dot { margin: 0 10rpx; }.category-arrow { width: 52rpx; height: 52rpx; background: rgba(255,255,255,.7); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-left: 8rpx; font-size: 34rpx; }
+.rules { display: flex; justify-content: space-around; margin-top: 40rpx; }.rule { display: flex; align-items: center; color: #636c83; font-size: 22rpx; }.rule-icon { border: 2rpx solid #ccd3e5; border-radius: 10rpx; color: #4a587b; font-weight: 700; font-size: 21rpx; padding: 4rpx 8rpx; margin-right: 10rpx; }.home-footer { text-align: center; font-size: 22rpx; color: #81899b; margin-top: 32rpx; }
+/* 顶部保持内容所需高度，仅题库列表使用剩余屏高并独立滚动。 */
+.home > view { flex-shrink: 0; }
+.home .greeting { margin-bottom: 16rpx; }
+.home .hero { flex: 0 0 auto; min-height: 296rpx; padding: 28rpx; }
+.home .hero-copy { min-width: 0; }
+.home .hero-title { font-size: 46rpx; margin: 12rpx 0; }
+.home .hero-caption { font-size: 22rpx; white-space: normal; }
+.home .mascot { width: 168rpx; height: 218rpx; margin-left: -12rpx; }
+.home .mascot-card { width: 136rpx; height: 168rpx; margin-top: 12rpx; }
+.home .mascot-q { font-size: 96rpx; }
+.home .mascot-shadow { margin-top: 20rpx; }
+.home .spark-one { top: -4rpx; }
+.home .record-strip { padding: 16rpx 24rpx; margin: 16rpx 0 24rpx; }
+.home .record-number { font-size: 36rpx; overflow-wrap: anywhere; }
+.home .record { min-width: 0; }
+.home .record-note { flex-shrink: 0; }
+.home .category-heading { margin-bottom: 16rpx; }
+.home .category-scroll { flex: 1; height: 0; min-height: 0; }
+.home .category-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20rpx; padding: 4rpx 4rpx 16rpx; }
+.home .category { min-height: 248rpx; min-width: 0; padding: 20rpx; margin: 0; flex-direction: column; align-items: stretch; }
+.home .category-top { display: flex; align-items: center; justify-content: space-between; min-height: 68rpx; margin-bottom: 12rpx; }
+.home .category-copy { width: 100%; }
+.home .category-arrow { width: 44rpx; height: 44rpx; font-size: 30rpx; flex-shrink: 0; }
+.home .category-title { font-size: 32rpx; line-height: 1.4; }
+.home .category-meta { display: flex; flex-wrap: wrap; column-gap: 12rpx; row-gap: 4rpx; margin-top: 8rpx; font-size: 20rpx; }
+.home .category-meta > text { white-space: nowrap; }
+.home .category-art { width: 68rpx; height: 68rpx; margin-right: 0; }
+.home .art-paper { width: 52rpx; height: 62rpx; padding: 4rpx 8rpx; border-width: 2rpx; }
+.home .art-paper .paper-line { display: none; }
+.home .art-spark { top: -8rpx; font-size: 26rpx; }
+.home .art-paper text { font-size: 28rpx; }
+.home .english .art-paper text { font-size: 24rpx; }
+.home .rules { margin-top: 20rpx; }
+.league { background: #ffe2db; box-shadow: 0 6rpx 0 #e8bfb5; }
+.league .art-paper { background: #fff8f5; border-color: #9b5544; box-shadow: 5rpx 5rpx 0 #e6b5a8; }
+.league .art-paper text, .league .art-spark { color: #9b5544; }
+.league .paper-line { background: #dca596; }
+.league .category-subtitle, .league .category-meta { color: #81584d; }
+.driving { background: #daf0f1; box-shadow: 0 6rpx 0 #b5d7d9; }
+.driving .art-paper { background: #f4ffff; border-color: #28686e; box-shadow: 5rpx 5rpx 0 #a6cfd2; }
+.driving .art-paper text, .driving .art-spark { color: #28686e; }
+.driving .category-subtitle, .driving .category-meta { color: #3d6369; }
+.geography { background: #f1e4c9; box-shadow: 0 6rpx 0 #d8c29b; }
+.geography .art-paper { background: #fffcf5; border-color: #735c35; box-shadow: 5rpx 5rpx 0 #d7c199; }
+.geography .art-paper text, .geography .art-spark { color: #735c35; }
+.geography .category-subtitle, .geography .category-meta { color: #715c39; }
+@media (max-height: 560px) {
+  .home.page.screen { padding-top: 12rpx; padding-bottom: calc(12rpx + env(safe-area-inset-bottom)); }
+  .home .greeting { margin-bottom: 12rpx; }
+  .home .hero { min-height: 248rpx; padding: 20rpx 24rpx; }
+  .home .hero-label { display: none; }
+  .home .hero-title { font-size: 40rpx; }
+  .home .mascot { height: 184rpx; }
+  .home .mascot-card { height: 148rpx; width: 120rpx; }
+  .home .mascot-q { font-size: 80rpx; }
+  .home .mascot-shadow { display: none; }
+  .home .record-strip { margin: 12rpx 0 16rpx; padding: 12rpx 20rpx; }
+  .home .record-number { font-size: 32rpx; }
+  .home .category-heading { margin-bottom: 12rpx; }
+  .home .section-title { font-size: 30rpx; }
+  .home .rules { margin-top: 12rpx; }
+}
+
+/* 两列卡片保留各题库配色，列表独立滚动，不压缩顶部。 */
+.riddles { background: #e7dff8; box-shadow: 0 6rpx 0 #ccbee5; }
+.riddles .art-paper { background: #fcf9ff; border-color: #73509b; box-shadow: 5rpx 5rpx 0 #c9b4e3; }
+.riddles .art-paper text, .riddles .art-spark { color: #73509b; }
+.riddles .paper-line { background: #baa0d7; }
+.riddles .category-subtitle, .riddles .category-meta { color: #685180; }
+
+.journey { background: #ffe3c3; box-shadow: 0 6rpx 0 #e7be96; }
+.journey .art-paper { background: #fff8ee; border-color: #a35b2c; box-shadow: 5rpx 5rpx 0 #dfb283; }
+.journey .art-paper text, .journey .art-spark { color: #a35b2c; }
+.journey .paper-line { background: #d3a579; }
+.journey .category-subtitle, .journey .category-meta { color: #875631; }
+.anime { background: #d9edf9; box-shadow: 0 6rpx 0 #abcfe5; }
+.anime .art-paper { background: #f5fbff; border-color: #306c99; box-shadow: 5rpx 5rpx 0 #a3cbe5; }
+.anime .art-paper text, .anime .art-spark { color: #306c99; }
+.anime .paper-line { background: #8db9d7; }
+.anime .category-subtitle, .anime .category-meta { color: #3f6683; }
+
+.invite-banner { display: flex; align-items: center; justify-content: space-between; gap: 12rpx; margin: 0 0 16rpx; padding: 12rpx 16rpx; background: #fff0bd; border-radius: 16rpx; color: #765617; font-size: 23rpx; }
+.invite-banner > text { flex: 1; min-width: 0; }
+.invite-banner > button { width: auto; flex-shrink: 0; min-height: 64rpx; padding: 10rpx 16rpx; font-weight: 800; background: white; border-radius: 12rpx; display: flex; align-items: center; }

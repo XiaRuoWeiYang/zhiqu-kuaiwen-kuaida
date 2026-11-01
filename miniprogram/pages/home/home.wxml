@@ -1,0 +1,19 @@
+<view class="page screen home enter">
+  <view class="between greeting"><text class="eyebrow muted">每天一点新知识</text><view class="tiny-badge"><view class="online-dot"></view> 脑力营业中</view></view>
+  <view class="hero">
+    <view class="hero-copy"><view class="hero-label">有知识 · 更有意思</view><view class="hero-title"><view>脑洞开场，</view><view>你来接招！</view></view><view class="hero-caption">10 秒一题，看看你能闯多远</view></view>
+    <view class="mascot" aria-hidden="true"><view class="spark spark-one">✦</view><view class="spark spark-two">✦</view><view class="mascot-card"><view class="mascot-q">?</view><view class="mascot-face"><view class="eye"></view><view class="smile"></view><view class="eye"></view></view></view><view class="mascot-shadow"></view></view>
+  </view>
+  <view class="record-strip"><view class="record"><text class="record-number">{{best}}<text class="unit"> 分</text></text><text class="record-label">历史最高</text></view><view class="record-divider"></view><view class="record"><text class="record-number">{{totalCorrect}}<text class="unit"> 题</text></text><text class="record-label">累计答对</text></view><view class="record-note"><view>答得快加分</view><view class="heavy">10～20 分</view></view></view>
+  <view wx:if="{{invitedCategory}}" class="invite-banner"><text>朋友邀你挑战 · {{invitedName}}</text><button data-category="{{invitedCategory}}" bindtap="start" hover-class="press">开始 ↗</button></view>
+  <view class="between category-heading"><text class="section-title">今天，挑战哪一关？</text><text class="muted small">选一个开始</text></view>
+  <scroll-view class="content-scroll category-scroll" scroll-y enhanced bounces="{{false}}" show-scrollbar="{{true}}" aria-label="题库列表">
+  <view class="category-list">
+  <button wx:for="{{categories}}" wx:key="id" class="category {{item.id}}" hover-class="press" data-category="{{item.id}}" bindtap="start" aria-label="开始{{item.name}}">
+    <view class="category-top"><view class="category-art" aria-hidden="true"><view class="art-paper"><text>{{item.symbol}}</text><view class="paper-line"></view><view class="paper-line short"></view></view><view class="art-spark">✧</view></view><view class="category-arrow">↗</view></view>
+    <view class="category-copy"><view class="category-title">{{item.name}}</view><view class="category-meta"><text>{{item.count}} 道题</text><text>最高 {{item.best}} 分</text></view></view>
+  </button>
+  </view>
+  </scroll-view>
+  <view class="rules"><view class="rule"><text class="rule-icon">10s</text><text>限时作答</text></view><view class="rule"><text class="rule-icon">1次</text><text>每局跳过</text></view><view class="rule"><text class="rule-icon">×</text><text>答错结算</text></view></view>
+</view>

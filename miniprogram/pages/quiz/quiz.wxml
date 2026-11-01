@@ -1,0 +1,30 @@
+<view class="page screen quiz enter" wx:if="{{ready}}">
+  <view class="between quiz-top"><view class="mode-pill {{category}}">{{categoryName}}</view><view class="quiz-top-controls"><view class="question-counter">第 <text class="heavy">{{number}}</text> / {{total}} 题</view><button size="mini" class="sound-toggle {{soundEnabled ? '' : 'sound-off'}}" bindtap="toggleSound" hover-class="press" aria-label="{{soundEnabled ? '关闭倒计时音效' : '开启倒计时音效'}}">音效{{soundEnabled ? '开' : '关'}}</button></view></view>
+  <view class="score-bar"><view><text class="muted score-label">本局积分</text><text class="score-number">{{score}}</text></view><view class="timer {{urgent ? 'urgent' : ''}}"><text class="timer-number">{{seconds}}</text><text>秒</text></view></view>
+  <view class="time-track"><view class="time-fill {{urgent ? 'urgent-fill' : ''}}" style="transform: scaleX({{progress}});"></view></view>
+  <scroll-view class="content-scroll quiz-scroll" scroll-y enhanced bounces="{{false}}" show-scrollbar="{{false}}" scroll-into-view="question-{{number}}">
+  <view class="quiz-scroll-inner">
+  <view class="question-panel" id="question-{{number}}">
+    <view class="between"><text class="question-tag">四选一</text><view class="streak">已答对 <text class="heavy">{{correct}}</text> 题</view></view>
+    <view wx:if="{{category === 'poetry'}}" class="question-body poem-body">
+      <view class="question-prompt">{{question.prompt}}</view>
+      <view class="verse">「{{question.verse}}」</view>
+      <view class="verse-blank">{{question.prompt === '接出下一句' ? '下一句是……' : '上一句是……'}}</view>
+    </view>
+    <view wx:elif="{{category === 'english'}}" class="question-body word-body"><view class="word">{{question.word}}</view><view class="word-pronunciation"><text class="pronunciation-accent">{{question.phoneticAccent}}</text><text class="ipa">/{{question.phonetic}}/</text></view><view class="word-pos">{{question.partOfSpeech}} · 常用义</view><view class="word-hint">{{question.prompt}}</view></view>
+    <view wx:elif="{{category === 'league'}}" class="question-body league-body"><view class="league-prompt">{{question.prompt}}</view><view class="league-quote">“{{question.quote}}”</view></view>
+    <view wx:else class="question-body"><view class="question-prompt">{{question.prompt}}</view></view>
+  </view>
+  <view class="answer-label">选择你的答案</view>
+  <view class="options">
+    <button wx:for="{{options}}" wx:key="index" class="option {{item.state}}" data-index="{{item.index}}" bindtap="choose" disabled="{{locked}}" hover-class="option-press" aria-label="选项{{item.letter}}，{{item.label}}"><view class="option-letter">{{item.letter}}</view><text class="option-text">{{item.label}}</text><text wx:if="{{item.state === 'correct'}}" class="check">✓</text></button>
+  </view>
+  </view>
+  </scroll-view>
+  <view class="quiz-actions">
+  <view class="feedback {{feedbackType}}" aria-role="status">{{feedback || '相信你的第一直觉！'}}</view>
+  <button wx:if="{{feedbackType === 'notice'}}" class="primary-button" bindtap="goToResult" hover-class="press">查看成绩</button>
+  <button wx:else class="skip-button {{skipUsed ? 'used' : ''}}" bindtap="skip" disabled="{{skipUsed || locked}}" hover-class="press"><text class="skip-symbol">↷</text>{{skipUsed ? '本局跳过机会已用完' : '这题先跳过'}}<text wx:if="{{!skipUsed}}" class="skip-count">剩余 1 次</text></button>
+  <view class="quiz-footnote">{{category === 'driving' ? '答错或超时结束 · 非官方考试题库' : '答错或超时，本局挑战结束'}}</view>
+  </view>
+</view>

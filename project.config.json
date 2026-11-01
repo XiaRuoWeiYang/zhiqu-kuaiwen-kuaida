@@ -1,0 +1,26 @@
+{
+  "description": "知趣快问快答：九类题库、我的页面、微信云开发登录与分享",
+  "miniprogramRoot": "miniprogram/",
+  "compileType": "miniprogram",
+  "appid": "wx3648ec706142998b",
+  "projectname": "知趣快问快答",
+  "setting": {
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "minified": true,
+    "minifyWXSS": true,
+    "minifyWXML": true,
+    "urlCheck": true
+  },
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  },
+  "isGameTourist": false,
+  "cloudfunctionRoot": "cloudfunctions/"
+}
